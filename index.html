@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./stylesheets/index.css">
+    <link rel="stylesheet" href="./stylesheets/slider.css">
+    <style>
+        .main .page3 {
+            background-color: #D2D2D2;
+            background-image:
+                repeating-linear-gradient(to right, transparent 0 100px,
+                    #25283b22 100px 101px),
+                repeating-linear-gradient(to bottom, transparent 0 100px,
+                    #25283b22 100px 101px);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="loader w-full h-screen bg-black fixed top-0 left-0 z-20 flex items-center justify-center flex-col">
+        <div class="line w-[80%] border-b-2 py-2 relative">
+            <div class="video-container h-[100px] w-[140px] overflow-hidden rounded-lg">
+                <video src="./assets/videos/loader_video.mp4" autoplay loop muted
+                    class="w-full h-full object-cover"></video>
+            </div>
+            <div class="counting text-white absolute -bottom-[20%] right-0">
+                <h1>
+                    00%
+                </h1>
+            </div>
+        </div>
+    </section>
+
+    <main class="main w-full bg-[#111111] text-white overflow-hidden">
+        <section class="page1 w-full h-[100vh] relative">
+            <div class="video-container w-full h-full bg-[#111]">
+                <video src="./assets/videos/v1.mp4" autoplay loop muted
+                    class="w-full h-full object-cover transition-all"></video>
+            </div>
+            <div class="info w-full h-full absolute top-0 left-0">
+                <nav class="navbar flex items-center justify-between w-full h-[15vh] px-7 ">
+                    <div class="left flex gap-2 items-center">
+                        <img src="./assets/logo.png" class="w-[40px] h-[40px]" alt="">
+                    </div>
+                    <div class="center">
+                        <ul class="flex items-center gap-16">
+                            <li><a class="text-sm tracking-wide font-bold" href="">Free tools</a></li>
+                            <li><a class="text-sm tracking-wide font-bold" href="">Magic tools</a></li>
+                            <li><a class="text-sm tracking-wide font-bold" href="">Generate</a></li>
+                            <li><a class="text-sm tracking-wide font-bold" href="">Price</a></li>
+                            <li><a class="text-sm tracking-wide font-bold" href="">Gallery</a></li>
+                            <li><a class="text-sm tracking-wide font-bold" href="">Examples</a></li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <button class="border px-5 py-1 rounded-full">Log in</button>
+                    </div>
+                </nav>
+                <div class="inner-info w-full h-[85vh] flex items-center justify-between flex-col">
+                    <div
+                        class="hover-texts w-full flex items-center gap-16 justify-center pt-[10vw] flex-col lg:flex-row">
+                        <h1 id="text-1" class="cursor-pointer text-[4vw] font-[clash] font-medium">Versatile</h1>
+                        <h1 id="text-2" class="cursor-pointer text-[4vw] font-[clash] font-medium">Interactive</h1>
+                        <h1 id="text-3" class="cursor-pointer text-[4vw] font-[clash] font-medium">Creative</h1>
+                    </div>
+                    <h1 class="text-[25vw] lg:text-[20vw] font-bold font-[clash] leading-none">FLUX</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="page2 w-full">
+            <div
+                class="txt w-[100%] h-[100vh] text-center flex flex-col gap-[2.5vw] text-white justify-center align-center bg-[#111]">
+                <h3 class="text-[6vw] md:text-4xl font-[clash]">More Than Just <span class="text-[#adff2f]">Flux
+                        1</span>
+                </h3>
+                <p class="text-[5vw] w-[50%] self-center text-[#222222] md:text-2xl">BasedLabs extends beyond
+                    FLUX.1,offering a range of
+                    AI-powered creative tools. Generate AI images,edit
+                    videos, and manipulate audio content on one
+                    platform. Our intuitive interface allows both beginners
+                    and professionals to create high-quality visual and
+                    audio projects efficiently. Whether for business or
+                    personal use, BasedLabs provides the resources to
+                    bring your ideas to life.
+                </p>
+            </div>
+        </section>
+
+        <section class="w-full h-screen" id="canvas">
+            <canvas class="w-full h-full"></canvas>
+        </section>
+
+        <section class="page4 w-full min-h-screen py-10">
+            <div class="container1 h-[100vh] w-full bg-gray-900 flex flex-col-reverse sm:flex-row sm:h-[50vh]">
+                <div class="item1 h-[50%] w-full flex flex-col justify-center p-[100px] gap-4 text-center sm:h-full">
+                    <h1 class="text-white text-xl font-bold">Enhanced Anatomical Accuracy</h1>
+                    <p class="text-white text-sm leading-8 ">FLUX.1 takes a significant leap forward in rendering human
+                        features, particularly hands. While not flawless, it consistently produces more realistic and
+                        proportionate body parts compared to previous open-source models, elevating the quality of
+                        character-based images.
+                    </p>
+                </div>
+
+                <div class="item2 h-[50%] w-full bg-gray-900 flex items-center justify-center sm:h-full">
+                    <img class=" h-[90%] rounded-xl" src="./assets/zip/62a1ccc0-5127-11ef-b34e-b559fa367ae2.webp" alt=""
+                        srcset="">
+                </div>
+            </div>
+
+            <div class="container1 h-[100vh] w-full bg-gray-900  sm:flex  sm:h-[50vh]">
+
+                <div class="item2 h-[50%] w-full bg-gray-900 flex items-center justify-center sm:h-full"><img
+                        class=" h-[90%] rounded-xl" src="./assets/zip/96958de0-5128-11ef-8adf-09a681011d06.webp" alt=""
+                        srcset=""></div>
+                <div class="item1 h-[50%] w-full flex flex-col  justify-center p-[100px] gap-4  text-center sm:h-full">
+                    <h1 class="text-white text-xl font-bold">Enhanced Anatomical Accuracy</h1>
+                    <p class="text-white text-sm leading-8 ">FLUX.1 takes a significant leap forward in rendering human
+                        features, particularly hands. While not flawless, it consistently produces more realistic and
+                        proportionate body parts compared to previous open-source models, elevating the quality of
+                        character-based images.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="container1 h-[100vh] w-full bg-gray-900 flex flex-col-reverse sm:flex-row sm:h-[50vh]">
+                <div class="item1 h-[50%] w-full flex flex-col  justify-center p-[100px] gap-4 text-center  sm:h-full">
+                    <h1 class="text-white text-xl font-bold">Enhanced Anatomical Accuracy</h1>
+                    <p class="text-white text-sm leading-8 ">FLUX.1 takes a significant leap forward in rendering human
+                        features, particularly hands. While not flawless, it consistently produces more realistic and
+                        proportionate body parts compared to previous open-source models, elevating the quality of
+                        character-based images.
+                    </p>
+                </div>
+
+                <div class="item2 h-[50%] w-full   bg-gray-900 flex items-center justify-center sm:h-full"><img
+                        class=" h-[90%] rounded-xl" src="./assets/zip/ab1d2390-5128-11ef-b70d-bb4c94186d32.webp" alt=""
+                        srcset=""></div>
+            </div>
+
+            </div>
+        </section>
+
+        <section class="page3 w-full h-screen bg-white py-10">
+            <div class="banner">
+                <div class="slider" style="--quantity: 10">
+                    <div class="item" style="--position: 1"><img src="./assets/slider_images/IMAGE1.webp" alt=""></div>
+                    <div class="item" style="--position: 2"><img src="./assets/slider_images/IMAGE2.webp" alt=""></div>
+                    <div class="item" style="--position: 3"><img src="./assets/slider_images/IMAGE3.webp" alt=""></div>
+                    <div class="item" style="--position: 4"><img src="./assets/slider_images/IMAGE4.webp" alt=""></div>
+                    <div class="item" style="--position: 5"><img src="./assets/slider_images/IMAGE5.webp" alt=""></div>
+                    <div class="item" style="--position: 6"><img src="./assets/slider_images/IMAGE6.webp" alt=""></div>
+                    <div class="item" style="--position: 7"><img src="./assets/slider_images/IMAGE7.jpeg" alt=""></div>
+                    <div class="item" style="--position: 8"><img src="./assets/slider_images/zxc.png" alt=""></div>
+                    <div class="item" style="--position: 9"><img src="./assets/slider_images/IMAGE9.jpeg" alt=""></div>
+                    <div class="item" style="--position: 10"><img src="./assets/slider_images/IMAGE10.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="content">
+                    <h1 data-content="CSS ONLY">
+                        AI
+                    </h1>
+                    <div class="author">
+                        <h2>FLUX AI</h2>
+                        <p><b>Web Design by one and zero.</b></p>
+
+                    </div>
+                    <div class="model"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page5 w-full h-[400vh] flex flex-col">
+            <div class="first w-[50%] h-[100vh] bg-green-500"></div>
+            <div class="first w-[50%] h-[100vh] bg-red-500 ml-[50%]"></div>
+            <div class="first w-[50%] h-[100vh] bg-yellow-500"></div>
+            <div class="first w-[50%] h-[100vh] bg-gray-500 ml-[50%] "></div>
+        </section>
+
+        <div class="rotating_card flex flex-col ">
+
+            <div class="elem items-center relative flex align-center justify-between w-[100%] h-[25vh] py-[3.5vw] px-[3vw] pr-[9]"
+                style="border-bottom: 1px solid white ">
+                <img src="assets/plug_img/img1.webp" style="transform: translate((-50% ,-50%) ) , z-index = 900"
+                    class="opacity-0 h-[140%] absolute z-[999] " alt="">
+                <h1 class="uppercase font-bold  text-[2vw]  opacity-[.7] ">AI GERNATED </h1>
+                <h5>2023</h5>
+            </div>
+
+            <div class="elem items-center relative flex align-center justify-between w-[100%] h-[25vh] py-[3.5vw] px-[3vw] pr-[9]"
+                style="border-bottom: 1px solid white">
+                <img src="assets/plug_img/img2.jpg" style="transform: translate((-50% ,-50%) ) , z-index = 900"
+                    class="opacity-0 h-[140%] absolute z-[999] " alt="">
+                <h1 class="uppercase font-bold  text-[2vw]  opacity-[.7] ">decoration</h1>
+                <h5>2024</h5>
+            </div>
+
+            <div
+                class="elem items-center elemlast relative flex align-center justify-between w-[100%] h-[25vh] py-[3.5vw] px-[3vw] pr-[9]">
+                <img src="assets/plug_img/img3.jpg" style="transform: translate((-50% ,-50%) ) , z-index = 900"
+                    class="opacity-0 h-[140%] absolute z-[999] " alt="">
+                <h1 class="uppercase font-bold  text-[2vw]  opacity-[.7] ">Upcoming</h1>
+                <h5>2025</h5>
+            </div>
+
+        </div>
+        <footer class="w-full">
+
+            <div
+                class="flex flex-col md:flex-row justify-around items-center md:items-start gap-10 bg-black py-10 text-center md:text-left">
+                <div class="flex flex-col">
+                    <h2 class="text-2xl sm:text-3xl font-semibold mb-4">Link</h2>
+                    <a href="#" class="hover:underline text-lg sm:text-2xl">Examples</a>
+                    <a href="#" class="hover:underline text-lg sm:text-2xl">Flux AI Images Generator</a>
+                    <a href="#" class="hover:underline text-lg sm:text-2xl">Flux AI Image Generator Gallery</a>
+                </div>
+
+                <div class="flex flex-col">
+                    <h2 class="text-2xl sm:text-3xl font-semibold mb-4">Legal</h2>
+                    <a href="#" class="hover:underline text-lg sm:text-2xl">Privacy</a>
+                    <a href="#" class="hover:underline text-lg sm:text-2xl">Terms & Conditions</a>
+                    <a href="#" class="hover:underline text-lg sm:text-2xl">Flux AI Image Generator Gallery</a>
+                </div>
+
+                <div class="flex flex-col">
+                    <h2 class="text-2xl sm:text-3xl font-semibold mb-4">Join our Slack</h2>
+                    <a href="#" class="flex items-center text-lg sm:text-2xl space-x-2 hover:underline">
+                        <i class="ri-instagram-line"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="#" class="flex items-center text-lg sm:text-2xl space-x-2 hover:underline">
+                        <i class="ri-facebook-circle-fill"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="#" class="flex items-center text-lg sm:text-2xl space-x-2 hover:underline">
+                        <i class="ri-linkedin-fill"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="#" class="flex items-center text-lg sm:text-2xl space-x-2 hover:underline">
+                        <i class="ri-twitter-x-line"></i>
+                        <span>Twitter</span>
+                    </a>
+                </div>
+            </div>
+
+            <section class="footer-content w-full text-center leading-none ">
+                <h1 class="text-[20vw] sm:text-[22vw] font-bold">FLUX AI.</h1>
+            </section>
+            <div class="w-full bg-black py-4">
+                <p class="text-center font-bold text-base sm:text-xl">© 2024 Flux AI. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <!--  Gsap is needed for Basic Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- Scroll Trigger is needed for Scroll Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="./javascripts/index.js"></script>
+    <script src="./javascripts/loader.js"></script>
+    <script src="./javascripts/canvas.js"></script>
+</body>
+
+</html>
