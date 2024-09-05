@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flux</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./stylesheets/index.css">
     <link rel="stylesheet" href="./stylesheets/slider.css">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
     <style>
         .main .page3 {
             background-color: #D2D2D2;
@@ -21,7 +22,7 @@
 </head>
 
 <body>
-    <section class="loader w-full h-screen bg-black fixed top-0 left-0 z-20 flex items-center justify-center flex-col">
+    <!-- <section class="loader w-full h-screen bg-black fixed top-0 left-0 z-20 flex items-center justify-center flex-col">
         <div class="line w-[80%] border-b-2 py-2 relative">
             <div class="video-container h-[100px] w-[140px] overflow-hidden rounded-lg">
                 <video src="./assets/videos/loader_video.mp4" autoplay loop muted
@@ -33,7 +34,7 @@
                 </h1>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <main class="main w-full bg-[#111111] text-white overflow-hidden">
         <section class="page1 w-full h-[100vh] relative">
@@ -42,21 +43,22 @@
                     class="w-full h-full object-cover transition-all"></video>
             </div>
             <div class="info w-full h-full absolute top-0 left-0">
-                <nav class="navbar flex items-center justify-between w-full h-[15vh] px-7 ">
+                <nav
+                    class="navbar flex items-center justify-between w-full h-[15vh] px-7 md:items-center md:flex md:justify-between md:gap-[10px]">
                     <div class="left flex gap-2 items-center">
                         <img src="./assets/logo.png" class="w-[40px] h-[40px]" alt="">
                     </div>
-                    <div class="center">
+                    <div class="center hidden md:block ">
                         <ul class="flex items-center gap-16">
-                            <li><a class="text-sm tracking-wide font-bold" href="">Free tools</a></li>
-                            <li><a class="text-sm tracking-wide font-bold" href="">Magic tools</a></li>
-                            <li><a class="text-sm tracking-wide font-bold" href="">Generate</a></li>
-                            <li><a class="text-sm tracking-wide font-bold" href="">Price</a></li>
-                            <li><a class="text-sm tracking-wide font-bold" href="">Gallery</a></li>
-                            <li><a class="text-sm tracking-wide font-bold" href="">Examples</a></li>
+                            <li><a class="text-sm" href="">Free tools</a></li>
+                            <li><a class="text-sm" href="">Magic tools</a></li>
+                            <li><a class="text-sm" href="">Generate</a></li>
+                            <li><a class="text-sm" href="">Price</a></li>
+                            <li><a class="text-sm" href="">Gallery</a></li>
+                            <li><a class="text-sm" href="">Examples</a></li>
                         </ul>
                     </div>
-                    <div class="right">
+                    <div class="right md:w-[15vw]">
                         <button class="border px-5 py-1 rounded-full">Log in</button>
                     </div>
                 </nav>
@@ -96,7 +98,7 @@
         </section>
 
         <section class="page4 w-full min-h-screen py-10">
-            <div class="container1 h-[100vh] w-full bg-gray-900 flex flex-col-reverse sm:flex-row sm:h-[50vh]">
+            <div class="container1 h-[100vh] w-full bg-[#111] flex flex-col-reverse sm:flex-row sm:h-[50vh]">
                 <div class="item1 h-[50%] w-full flex flex-col justify-center p-[100px] gap-4 text-center sm:h-full">
                     <h1 class="text-white text-xl font-bold">Enhanced Anatomical Accuracy</h1>
                     <p class="text-white text-sm leading-8 ">FLUX.1 takes a significant leap forward in rendering human
@@ -106,15 +108,15 @@
                     </p>
                 </div>
 
-                <div class="item2 h-[50%] w-full bg-gray-900 flex items-center justify-center sm:h-full">
+                <div class="item2 h-[50%] w-full bg-[#111] flex items-center justify-center sm:h-full">
                     <img class=" h-[90%] rounded-xl" src="./assets/zip/62a1ccc0-5127-11ef-b34e-b559fa367ae2.webp" alt=""
                         srcset="">
                 </div>
             </div>
 
-            <div class="container1 h-[100vh] w-full bg-gray-900  sm:flex  sm:h-[50vh]">
+            <div class="container1 h-[100vh] w-full bg-[#111]  sm:flex  sm:h-[50vh]">
 
-                <div class="item2 h-[50%] w-full bg-gray-900 flex items-center justify-center sm:h-full"><img
+                <div class="item2 h-[50%] w-full bg-[#111] flex items-center justify-center sm:h-full"><img
                         class=" h-[90%] rounded-xl" src="./assets/zip/96958de0-5128-11ef-8adf-09a681011d06.webp" alt=""
                         srcset=""></div>
                 <div class="item1 h-[50%] w-full flex flex-col  justify-center p-[100px] gap-4  text-center sm:h-full">
@@ -128,7 +130,7 @@
 
             </div>
 
-            <div class="container1 h-[100vh] w-full bg-gray-900 flex flex-col-reverse sm:flex-row sm:h-[50vh]">
+            <div class="container1 h-[100vh] w-full bg-[#111] flex flex-col-reverse sm:flex-row sm:h-[50vh]">
                 <div class="item1 h-[50%] w-full flex flex-col  justify-center p-[100px] gap-4 text-center  sm:h-full">
                     <h1 class="text-white text-xl font-bold">Enhanced Anatomical Accuracy</h1>
                     <p class="text-white text-sm leading-8 ">FLUX.1 takes a significant leap forward in rendering human
@@ -138,7 +140,7 @@
                     </p>
                 </div>
 
-                <div class="item2 h-[50%] w-full   bg-gray-900 flex items-center justify-center sm:h-full"><img
+                <div class="item2 h-[50%] w-full   bg-[#111] flex items-center justify-center sm:h-full"><img
                         class=" h-[90%] rounded-xl" src="./assets/zip/ab1d2390-5128-11ef-b70d-bb4c94186d32.webp" alt=""
                         srcset=""></div>
             </div>
@@ -175,11 +177,33 @@
             </div>
         </section>
 
-        <section class="page5 w-full h-[400vh] flex flex-col">
-            <div class="first w-[50%] h-[100vh] bg-green-500"></div>
-            <div class="first w-[50%] h-[100vh] bg-red-500 ml-[50%]"></div>
-            <div class="first w-[50%] h-[100vh] bg-yellow-500"></div>
-            <div class="first w-[50%] h-[100vh] bg-gray-500 ml-[50%] "></div>
+        <section class="page5 w-full flex flex-col">
+            <div class="first w-[100%] h-[50vh] lg:w-[50%] flex flex-col items-center justify-center p-5 gap-5">
+                <h1 class="text-5xl text-center text-[yellowgreen]">High-Resolution Image Generation</h1>
+                <p class="text-2xl text-center md:w-[70%] w-[90%]">Flux AI excels at producing high-quality images with
+                    various aspect ratios, making it suitable for
+                    detailed and visually stunning creations.</p>
+            </div>
+            <div
+                class="first w-[100%] h-[50vh] self-end lg:w-[50%] flex flex-col items-center justify-center p-5 gap-5">
+                <h1 class="text-5xl text-center text-[yellowgreen]">Versatile Image Transformation</h1>
+                <p class="text-2xl text-center md:w-[70%] w-[90%]"> The platform supports a variety of image-to-image
+                    transformations, enabling users to alter existing images into new styles or variations, which is
+                    particularly useful for artistic and creative projects.</p>
+            </div>
+            <div class="first w-[100%] h-[50vh] lg:w-[50%] flex flex-col items-center justify-center p-5 gap-5">
+                <h1 class="text-5xl text-center text-[yellowgreen]">Multiple Model Options</h1>
+                <p class="text-2xl text-center md:w-[70%] w-[90%]"> Flux AI provides different models—[Dev], [Pro], and
+                    [Schnell]—each optimized for different tasks such as speed, quality, and versatility. This allows
+                    users to choose the model that best fits their specific needs.</p>
+            </div>
+            <div
+                class="first w-[100%] h-[50vh] self-end lg:w-[50%] flex flex-col items-center justify-center p-5 gap-5">
+                <h1 class="text-5xl text-center text-[yellowgreen]">Advanced Natural Language Processing</h1>
+                <p class="text-2xl text-center md:w-[70%] w-[90%]">Beyond image generation, Flux AI also offers strong
+                    capabilities in text analysis, generation, and multimodal learning, which integrates text, images,
+                    and other data types for comprehensive analysis.</p>
+            </div>
         </section>
 
         <div class="rotating_card flex flex-col ">
@@ -263,7 +287,12 @@
 
     <!-- Scroll Trigger is needed for Scroll Effects -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+    <script>
+        (function () {
+            const locomotiveScroll = new LocomotiveScroll();
+        })();
+    </script>
     <script src="./javascripts/index.js"></script>
     <script src="./javascripts/loader.js"></script>
     <script src="./javascripts/canvas.js"></script>
